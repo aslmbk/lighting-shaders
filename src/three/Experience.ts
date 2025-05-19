@@ -12,6 +12,7 @@ export class Experience extends Engine {
 
   constructor(domElement: HTMLElement) {
     super({ domElement });
+    this.debug.activate();
     this.config = new Config();
     this.debugController = new DebugController(this);
 
